@@ -1,0 +1,130 @@
+.container__app {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 440px;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.container__header {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header__text p:nth-child(1) {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--light-text);
+}
+
+.header__text p:nth-child(2) {
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  color: var(--light-text);
+}
+
+.container__main {
+  background-color: var(--light-text);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+caption {
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  color: var(--primary-text);
+  text-align: left;
+}
+
+.chart {
+  --color: #ec775f;
+}
+
+.column {
+  height: 220px;
+}
+
+.current-day {
+  --color: #76b5bc;
+}
+
+.bar-el:hover {
+  --color: #ff9b87;
+}
+
+.bar-el:hover .current-day {
+  --color: #b4dfe5;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--secondary-text);
+}
+
+.bar {
+  border-radius: 4px;
+  transition: all 500ms ease-in-out;
+}
+
+.bar .data {
+  position: relative;
+  bottom: 28px;
+  font-size: 12px;
+  color: var(--light-text);
+  background-color: var(--primary-text);
+  padding: 4px;
+  border-radius: 4px;
+  margin-left: -10px;
+  margin-right: -10px;
+  transition: all 500ms ease-in-out;
+}
+
+hr {
+  margin: 1rem 0;
+  height: 2px;
+  border: none;
+  background-color: var(--background);
+}
+
+.container__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+}
+
+.left__footer__text p:nth-child(1) {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--secondary-text);
+  margin-bottom: 5px;
+}
+.left__footer__text p:nth-child(2) {
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 700;
+  color: var(--primary-text);
+  text-align: right;
+}
+
+.right__footer__text p:nth-child(1) {
+  font-weight: 700;
+  color: var(--primary-text);
+  text-align: right;
+}
+.right__footer__text p:nth-child(2) {
+  font-size: 14px;
+  color: var(--secondary-text);
+}
